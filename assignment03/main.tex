@@ -1,0 +1,99 @@
+% !TEX root = main.tex
+\input{preamble}
+\input{format}
+\input{commands}
+\begin{document}
+
+\noindent
+\begin{minipage}[t]{0.55\textwidth}
+    \textsf{\textbf{Student:}} Md Mobashir Rahman \\
+    \textbf{Email:} \href{mailto:mdra00001.stud.uni-saarland.de}{\texttt{mdra00001.stud.uni-saarland.de}} \\
+    \textsf{\textbf{Matriculation:}} 7059086
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.4\textwidth}
+    \raggedleft
+    \begin{Large}
+        \textsf{\textbf{Cellular Programs SS25}}\\
+        Assignment 3
+    \end{Large}
+\end{minipage}
+
+
+\vspace{2ex}
+
+\begin{multicols}{2}
+
+\begin{problem}{}{problem-label}
+    
+    If an active lysine-demethylase were actively removing the H3K9me3 mark, giving that enzyme more time should let it do more catalytic reactions. Slowing the fast early cell cycles stretches the pause between DNA replications, so the enzyme could keep removing H3K9me3 before new histones are loaded or the mark is restored. Faster cycles would do the opposite.
+
+    We can test this hypothesis by manipulating the levels of candidate demethylases. The strongest candidates are the \textbf{KDM4/JMJD2} family, which directly erase H3K9me3.
+    
+    
+    \textbf{Overexpress KDM4 (e.g., via mRNA injection):} H3K9me3 levels should decline more rapidly and drop lower than normal.
+    \textbf{Introduce a catalytically dead KDM4 mutant:} This mutant can bind to histones but cannot demethylate. It should act as a dominant negative, blocking the active enzyme and causing H3K9me3 to remain elevated.
+    \textbf{Knock down KDM4 (e.g., with morpholinos, siRNA, or CRISPR):} Reduced enzyme levels should result in prolonged and stronger retention of H3K9me3.
+    
+    
+    \noindent As controls, reducing the activity of writer enzymes such as \textbf{Setdb1} or \textbf{EHMT2} should also decrease H3K9me3 levels, while overexpressing them should enhance retention of the mark. If H3K9me3 levels respond clearly to these manipulations, this supports the active demethylation hypothesis. If levels change only minimally, passive dilution is likely the primary mechanism.      
+
+
+\end{problem}
+
+
+\begin{problem}{}{problem-label-2}
+    Early fish embryos rely on a large stockpile of maternal mRNAs and proteins that the oocyte packaged before fertilisation. \(\alpha\)-Amanitin blocks RNA polymerase II, so the embryo cannot produce new transcripts from its own (zygotic) genome, but this has no effect on the messages already present in the egg. These pre-loaded cyclins, CDKs, histones, ribosomes, etc.\ are sufficient to build spindles, replicate DNA, and cleave the cytoplasm repeatedly.
+
+    Because these early cell cycles are extremely rapid—comprising mostly S-phase and M-phase with minimal gap phases—the maternal stockpile lasts until the mid-blastula transition (MBT). Only at the MBT or onset of gastrulation, when the embryo requires de novo transcription for cell-type specification and for extending the cell cycle duration, does the \(\alpha\)-amanitin–treated cohort arrest, as observed in the the arrest at gastrulation in the \(\alpha\)-amanitin cohort, as shown by their failure to undergo gastrulation (Fig. 2B), aligns with this need for zygotic transcription.
+    
+    Starting from a single cell, each synchronous cleavage doubles the cell number:
+    \[
+    1 \rightarrow 2 \rightarrow 4 \rightarrow 8 \rightarrow \dots \rightarrow 2^n.
+    \]
+    Reaching approximately 4,000 cells (late blastula stage) therefore requires about 12 divisions, since
+    \[
+    2^{12} \approx 4,\!096.
+    \]
+
+\end{problem}
+
+
+\begin{problem}{}{problem-label-3}
+
+    \paragraph{Figure 4A – Direct Visual Cue.}
+    Each panel displays DAPI staining (grey) to mark nuclei and immunostained Setdb1 (magenta).
+    
+
+\textbf{Late-morula (pre-MBT):} Nuclei appear as bright DAPI-positive ovals that correspond to dark holes in the magenta channel, indicating that Setdb1 is largely excluded from the nuclei and enriched in the surrounding cytoplasm.
+\textbf{Late-blastula and pre-early-gastrula (post-MBT):} The same DAPI-positive ovals now contain strong magenta signal, revealing that Setdb1 has relocalized to the nuclei in addition to being present in the cytoplasm.
+ 
+    
+    \paragraph{Figure 4B – Quantitative Line Scans.}
+    Yellow arrows overlaid in Figure~4A were used to extract fluorescence intensity profiles. Grey traces (DAPI) denote nuclear regions; magenta traces (Setdb1) represent its spatial distribution.
+    
+
+ \textbf{Late-morula:} Magenta signal drops wherever the grey peaks—Setdb1 intensity dips within nuclei and rises in the cytoplasm.
+ \textbf{Late-blastula and pre-early-gastrula:} Magenta and grey peaks coincide, showing that Setdb1 is now abundant within nuclei while still present in the cytoplasm.
+
+    
+    \noindent
+    Together, the qualitative images (Figure~4A) and the coincident versus anti-coincident fluorescence profiles (Figure~4B) demonstrate that before the mid-blastula transition (MBT), Setdb1 is predominantly cytoplasmic. After MBT, Setdb1 relocalizes to both the cytoplasm and the nuclei.
+    
+\end{problem}
+
+
+\end{multicols}
+
+
+
+
+
+% =================================================
+
+% \newpage
+
+% \vfill
+
+
+\end{document}
