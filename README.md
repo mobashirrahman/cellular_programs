@@ -64,10 +64,3 @@ This repository is maintained clean of LaTeX auxiliary files. Only essential sou
 
 - **Course**: Cellular Programs
 - **Term**: SoSe25 (Summer Semester 2025)
-- **Student ID**: 7059086
-
-## Notes
-
-- Assignment 5 appears to be missing from the current structure
-- All assignments include both German and English versions of instructions
-- LaTeX source files are provided for reproducibility and version control 
