@@ -1,0 +1,91 @@
+% !TEX root = main.tex
+\input{preamble}
+\input{format}
+\input{commands}
+\begin{document}
+
+\noindent
+\begin{minipage}[t]{0.55\textwidth}
+    \textsf{\textbf{Student:}} Md Mobashir Rahman \\
+    \textbf{Email:} \href{mailto:mdra00001.stud.uni-saarland.de}{\texttt{mdra00001.stud.uni-saarland.de}} \\
+    \textsf{\textbf{Matriculation:}} 7059086
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.4\textwidth}
+    \raggedleft
+    \begin{Large}
+        \textsf{\textbf{Cellular Programs SS25}}\\
+        Assignment 6
+    \end{Large}
+\end{minipage}
+
+
+\begin{multicols}{2}
+\begin{problem}{}{problem-label}
+    DNMT1 is expressed mainly as a single, full-length isoform ($\sim$180 kDa), so it resolves as one dominant band.
+
+DNMT3A and DNMT3B each have several alternatively spliced or proteolytically processed isoforms (e.g., DNMT3A1 $\approx$ 120 kDa vs. DNMT3A2 $\approx$ 100 kDa; multiple DNMT3B variants), and they can also carry distinct post-translational modifications. These size differences lead to two or more closely spaced bands on the blot.
+
+    
+    
+\end{problem}
+
+
+
+\begin{problem}{}{problem-label-2}
+
+    \textbf{(a) What do the curves monitor?}
+
+The curves reflect the fate of the mice used in the experiment, not human patients or cell lines in a dish.
+
+\begin{itemize}
+    \item \textbf{Tumor Growth Curves (Figs. 4a, 4b):} These graphs show the change in tumor volume over time after human colorectal cancer (CRC) cells (HCT116 and RKO) were injected into immunodeficient mice. The y-axis represents the size of the tumor growing in the mice, and the x-axis represents the number of days after the cancer cells were injected.
+    \item \textbf{Survival Curves (Fig. 4c):} This graph shows the "Percent survival" of the mice over time. In this context, "death" refers to the point at which a mouse was euthanized because its tumor grew to the experimental endpoint of approximately 2000 mm\textsuperscript{3}. Therefore, the survival curves directly reflect the survival of the mice.
+\end{itemize}
+
+\textbf{(b) Do these tumors reflect human tumors or mouse tumors?}
+
+The tumors are \textbf{human tumors} growing within mice. This type of experiment is known as a xenograft model. The study used two well-established human colorectal cancer cell lines, HCT116 and RKO, which were injected into the mice to form the tumors. The resulting tumors are therefore composed of human cancerous tissue.
+
+\textbf{(c)  Why use immunodeficient mice?}
+
+The experiments were conducted in immune-deficient mice to prevent the mouse's immune system from recognizing and rejecting the injected human cancer cells. If these human cells were injected into a mouse with a normal, functioning immune system (an immunocompetent mouse), the mouse's body would identify the human cells as foreign and mount an immune response to destroy them. This would prevent the human cancer cells from surviving and growing into tumors. Using immunodeficient mice (specifically NCG mice, which lack mature T, B, and NK cells) is a standard and necessary procedure to allow the foreign human tumors to grow so their response to different treatments can be studied.
+
+
+\end{problem}
+
+\vspace{-1.5em}  % Reduce space between problems
+\begin{problem}{}{problem-label-3}
+
+
+    \noindent\textbf{Problem 3: Molecular Mechanism of LNP-mSTELLA Delivery}
+
+    \vspace{1em} % Adds a bit of vertical space
+    
+    The paper describes two different delivery strategies: a peptidic nanoparticle (PNP) system to deliver a peptide and a lipid nanoparticle (LNP) system to deliver mRNA. The SV40 nuclear localization signal (NLS) was used on the \textbf{PNP} system to deliver its peptide cargo (mSTE-1) to the nucleus. This approach, however, ultimately failed to show the desired effect. The successful strategy, which the rest of this answer will focus on, involved the \textbf{LNP} vehicle delivering mRNA, which was not described as being decorated with an NLS.
+    
+    The molecular process for the LNP-mRNA delivery unfolds across different cellular compartments:
+    
+    \begin{enumerate}
+        \item \textbf{LNP Entry and mRNA Release:} After the LNP enters the colorectal cancer (CRC) cell, it releases its cargo---mRNA encoding the mSTELLA protein---into the \textbf{cytoplasm}.
+        
+        \item \textbf{Translation in the Cytoplasm:} In the cytoplasm, the cell's native translational machinery (ribosomes) recognizes the mSTELLA mRNA and translates it into mSTELLA protein. The success of this step is confirmed by Western blot analysis showing the appearance of mSTELLA protein in LNP-mSTELLA treated cells.
+    
+        \item \textbf{Action in the Nucleus:} The newly synthesized mSTELLA protein then translocates into the \textbf{nucleus}, which is the primary location of its target, UHRF1. The key inhibitory events occur here:
+        \begin{itemize}
+            \item mSTELLA protein directly binds to a specific region of the UHRF1 protein known as the linked tandem Tudor and plant homeodomain (TTD-PHD).
+            \item This binding is highly specific and cooperative, allowing mSTELLA to outcompete histone H3 for the UHRF1 binding site.
+            \item This interaction displaces UHRF1 from the chromatin where it would normally function.
+        \end{itemize}
+    
+        \item \textbf{Translocation and Inhibition:} By binding to UHRF1 in the nucleus, mSTELLA causes the UHRF1-mSTELLA complex to be exported back to the \textbf{cytoplasm}. This removal of UHRF1 from its site of action in the nucleus effectively inhibits its ability to maintain cancer-specific DNA methylation.
+    \end{enumerate}
+    
+    In summary, the mRNA cargo exerts its effect indirectly. It is first translated into protein in the \textbf{cytoplasm}, and the resulting mSTELLA protein carries out its primary function in the \textbf{nucleus} by binding to and removing UHRF1 from chromatin, and finally inhibiting its oncogenic activity.
+      
+
+\end{problem}
+
+\end{multicols}
+
+\end{document}

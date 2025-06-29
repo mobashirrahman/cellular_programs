@@ -1,0 +1,94 @@
+% !TEX root = main.tex
+\input{preamble}
+\input{format}
+\input{commands}
+\begin{document}
+
+\noindent
+\begin{minipage}[t]{0.55\textwidth}
+    \textsf{\textbf{Student:}} Md Mobashir Rahman \\
+    \textbf{Email:} \href{mailto:mdra00001.stud.uni-saarland.de}{\texttt{mdra00001.stud.uni-saarland.de}} \\
+    \textsf{\textbf{Matriculation:}} 7059086
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.4\textwidth}
+    \raggedleft
+    \begin{Large}
+        \textsf{\textbf{Cellular Programs SS25}}\\
+        Assignment 4
+    \end{Large}
+\end{minipage}
+
+\vspace{1ex}
+
+\begin{problem}{}{problem-label}
+    Because the two stem-cell models correspond to \textit{in-vivo} stages of the pluripotency (2i ESC $\approx$ naïve E4.5 epiblast, EpiLC $\approx$ formative E5.5 epiblast), they enable exploration of SOX2-dependent transitions \textit{in vitro}, bypassing the need for animal models.
+
+    \noindent\textbf{SOX2-related differentiation processes that can be studied \textit{in vitro} using 2i ESC and EpiLC models.}
+    
+    \noindent
+    % Use tabularx for full-width table
+    \begin{tabularx}{\textwidth}{|X|X|X|}
+    \hline
+    \textbf{Embryo Process} & \textbf{How 2i ESC/EpiLC Recreate It} & \textbf{What Can Be Dissected In Vitro} \\
+    \hline
+    \textbf{Opening and upkeep of naïve enhancers} – SOX2 acts as a pioneer in the pre-implantation epiblast & Acute SOX2 degradation in 2i ESCs collapses naïve enhancers and down-regulates target genes, mimicking E4.5 epiblast & Requirements for pioneer binding, motif dependence (SOX2/OCT4), enhancer-gene connectivity, rapid rescue assays \\
+    \hline
+    \textbf{Naïve $\rightarrow$ Formative transition} – SOX2 relocates, represses naïve genes, activates formative ones with ZIC3/OTX2 motifs & Conversion of 2i ESCs to EpiLCs reproduces SOX2's second chromatin shift; SOX2 loss disrupts both repression and activation & Timing of enhancer formation, co-factor involvement (ZIC3, OTX2), "pre-binding" vs pioneer dynamics \\
+    \hline
+    \textbf{Poising of future ectodermal programs ("pilot" mode)} – SOX2 pre-binds closed but future-accessible enhancers & These sites exist in 2i ESCs and open during EpiLC transition, allowing study of SOX2-based chromatin poising & Mechanisms of enhancer poising, chromatin accessibility dynamics, motif strength effects \\
+    \hline
+    \end{tabularx}
+    
+    
+\end{problem}
+
+\vspace{-2em}  % Reduce space between problems
+\setlength{\columnsep}{0.5pt}
+\begin{multicols}{2}
+
+\begin{problem}{}{problem-label-2}
+
+    ATAC-seq was used in this study to determine whether \textbf{SOX2} binds to regions of chromatin that are already accessible (``open'') or whether its binding precedes and possibly drives chromatin opening. This distinction enables the classification of SOX2 behavior into ``\textit{settler}'' or ``\textit{pioneer}'' categories.
+
+    \paragraph{E3.5 ICM-specific Sites: Settler Behavior}
+    
+    As shown in \textbf{Fig. 3B}, ATAC-seq tracks reveal that E3.5 inner cell mass (ICM)-specific sites are already accessible at E3.5.
+    \textbf{Fig. 3C} shows that these regions lose accessibility in the absence of transcription factors such as \textit{NR5A2} or \textit{TFAP2C}, but not \textit{SOX2}.
+    This indicates that \textit{SOX2} binds \textbf{after} chromatin opening and hence exhibits ``\textit{settler}'' behavior at these sites.
+    
+    \paragraph{E4.5 Epi-specific Sites: Pioneer Behavior}
+    
+    \textbf{Fig. 3D} shows that E4.5 epiblast-specific sites are \textbf{inaccessible} at E3.5 but become accessible at E4.5, concurrent with SOX2 binding.
+    In \textit{SOX2} knockout (KO) embryos, these regions remain closed, indicating that \textit{SOX2} is necessary to open them.
+    Therefore, \textit{SOX2} acts as a ``\textit{pioneer}'' factor at E4.5 Epi-specific sites by initiating chromatin accessibility.
+    
+    \paragraph{In summary,}
+    
+    ATAC-seq data across developmental stages demonstrate two modes of \textit{SOX2} binding:
+    
+    \textbf{Settler sites:} E3.5 ICM-specific regions that are pre-accessible and do not require SOX2 for opening.
+    
+    \textbf{Pioneer sites:} E4.5 Epi-specific regions that gain accessibility through SOX2-dependent mechanisms.   
+
+\end{problem}
+
+\vspace{-1.5em}  % Reduce space between problems
+\begin{problem}{}{problem-label-3}
+    \paragraph{(a) Mechanistic Role of TFAP2C (Fig.~4A)} 
+    
+    Figure~4A indicates that TFAP2C binds to numerous genomic sites in 8-cell (8C) embryos that will later be bound by SOX2 in the E3.5 inner cell mass (ICM), particularly at ``Pre-access'' SOX2 sites. These regions also show enrichment for TFAP2C motifs, suggesting early occupation by TFAP2C. As described elsewhere in the paper, TFAP2C actively contributes to the opening of these regions---facilitating accessibility at approximately 35\% of preaccessible enhancers---thereby priming the chromatin landscape for subsequent SOX2 binding. This positions TFAP2C as an upstream regulator in the transcriptional hierarchy.
+    
+    \paragraph{(b) TFAP2C as a Pioneer Factor (Fig.~4B)}
+    
+    In Figure~4B, TFAP2C is shown binding to a representative ``Pre-access'' site in 8C wild-type embryos, with corresponding ATAC-seq signal indicating an open chromatin state at that stage. Although the knockout condition is not shown in this specific panel, other figures (notably Figures~4D and 4E) reveal that loss of TFAP2C leads to reduced chromatin accessibility at these TFAP2C-bound loci. This necessity for TFAP2C in establishing or maintaining chromatin openness strongly supports its role as a \textbf{pioneer transcription factor}, capable of engaging nucleosome-bound DNA and priming enhancers for future activation.
+    \paragraph{(c) SOX2 Binding vs.~8C ATAC Signal (Fig.~4D)}
+    
+    The left-most column in Figure~4D shows SOX2 binding at E3.5 ICM to ``Pre-access'' sites that are previously bound by TFAP2C in 8C embryos (labeled ``8C TFAP2C$^+$''). The ``8C ATAC'' tracks reveal that TFAP2C knockout causes a marked reduction in chromatin accessibility at these sites in 8C embryos compared to controls. Interestingly, despite this loss of early accessibility, SOX2 binding at E3.5 still occurs robustly at these loci. This indicates that while TFAP2C facilitates early chromatin opening, its activity is not strictly required for SOX2 occupancy at later stages---SOX2 can bind even if the chromatin was not fully pre-accessible at 8C. This implies a level of functional redundancy or compensatory pioneering by SOX2 at E3.5.
+    
+       
+\end{problem}
+
+\end{multicols}
+
+\end{document}

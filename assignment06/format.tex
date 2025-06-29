@@ -1,0 +1,30 @@
+\usepackage{titlesec}
+\usepackage[many]{tcolorbox}
+
+% Adjust spacing after the chapter title
+\titlespacing*{\chapter}{0cm}{-2.0cm}{0.50cm}
+\titlespacing*{\section}{0cm}{0.50cm}{0.25cm}
+
+% Indent 
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.6ex}
+
+% --- Theorems, lemma, corollary, postulate, definition ---
+% \numberwithin{equation}{section}
+
+\newtcbtheorem[]{problem}{Problem}%
+    {enhanced,
+    colback = white,
+    colbacktitle = white,
+    coltitle = black,
+    boxrule = 0pt,
+    frame hidden,
+    fonttitle = \bfseries\sffamily,
+    breakable,
+    before skip = 1ex,
+    after skip = 1ex
+}{problem}
+
+\tcbuselibrary{skins, breakable}
+
+% --- You can define your own color box. Just copy the previous \newtcbtheorm definition and use the colors of yout liking and the title you want to use.
